@@ -8,7 +8,8 @@ public class SOAbility : ScriptableObject
     public string display_name = "none";
     [Tooltip("In seconds"), Min(0.1f)] public float cooldown = 1f;
     [Min(1)] public int use_number = 1;
-    public EAbilityKey key = EAbilityKey.None;
+    public List<SkillLevelSet> requirements;
+    public EAbilityPlace place = EAbilityPlace.None;
     public GameObject ability_object;
 
     public void Use(GameObject player)
@@ -17,3 +18,11 @@ public class SOAbility : ScriptableObject
         ability.Setup(player, ability_object);
     }
 }
+
+[System.Serializable]
+public struct SkillLevelSet
+{
+    public ESkillStats stat;
+    public int level;
+}
+

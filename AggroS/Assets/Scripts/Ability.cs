@@ -10,7 +10,7 @@ public class Ability : MonoBehaviour
 
     protected GameObject ability_prefab;
 
-    public virtual void Setup(GameObject player, GameObject ability_prefab)
+    public void Setup(GameObject player, GameObject ability_prefab)
     {
         player_script = player.GetComponent<Player>();
         player_transform = player.transform;

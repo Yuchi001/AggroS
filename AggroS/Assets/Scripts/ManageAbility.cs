@@ -19,7 +19,7 @@ public class ManageAbility : MonoBehaviour
         key = GameManager.instance.GetKeyBind_Ability(Ability.place);
         currentUseNumber = Ability.use_number;
     }
-
+     
     private void Update()
     {
         Timer();

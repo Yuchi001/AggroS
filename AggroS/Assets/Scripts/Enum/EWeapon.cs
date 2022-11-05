@@ -1,7 +1,8 @@
 public enum EWeapon
 {
     None,
-    Bow,
     Sword,
-    Wand
+    Weapon,
+    TechWeapon,
+    SmartWeapon
 }

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: ScaleSet
   m_EditorClassIdentifier: 
   ScaleStats:
-  - name: Strenght
+  - name: Body
     skill: 1
     SkillValuePair:
     - name: Health

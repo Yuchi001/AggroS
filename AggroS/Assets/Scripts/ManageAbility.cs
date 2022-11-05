@@ -6,9 +6,9 @@ using UnityEngine;
 
 public class ManageAbility : MonoBehaviour
 {
+    public KeyCode key;
     public SOAbility Ability { get; private set; } = null;
 
-    private KeyCode key;
     private int currentUseNumber;
 
     private float _timer = 0;
@@ -16,7 +16,6 @@ public class ManageAbility : MonoBehaviour
     public void Setup(SOAbility Ability)
     {
         this.Ability = Ability;
-        key = GameManager.instance.GetKeyBind_Ability(Ability.place);
         currentUseNumber = Ability.use_number;
     }
      
@@ -36,7 +35,7 @@ public class ManageAbility : MonoBehaviour
     }
     private void ManageInput()
     {
-        if (Input.GetKeyDown(key) == false) // return early if no key was pressed
+        if (Input.GetKeyDown(key) == false)
             return;
 
         if (currentUseNumber > 0)
@@ -46,7 +45,7 @@ public class ManageAbility : MonoBehaviour
         }
         else
         {
-            // cant use it right now!
+            // todo: cant use it right now!
         }
     }
 }

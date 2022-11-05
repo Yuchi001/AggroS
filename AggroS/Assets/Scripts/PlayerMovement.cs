@@ -6,7 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {
     private Dictionary<KeyCode, bool> ButtonsActive = new Dictionary<KeyCode, bool>(4);
 
-    private float MovementSpeed { get { return (float)Player.Instance.MovementSpeed / 100; } }
+    private float MovementSpeed { get { return (float)500/* to do zmiany */ / 100; } }
 
     private void Setup()
     {

@@ -1,5 +1,6 @@
 public enum EItem
 {
     Weapon,
-    Armor
+    Implant,
+    Buff
 }

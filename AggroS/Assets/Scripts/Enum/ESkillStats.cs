@@ -1,10 +1,10 @@
 public enum ESkillStats
 {
     None = 0,
-    Strenght = 1,
-    Dexternity = 2,
-    Constitution = 3,
-    Magic = 4,
-    Inteligence = 5
+    Body = 1,
+    Reflex = 2,
+    Cool = 3,
+    Inteligence = 4,
+    TechnicalAbility = 5
 }
 
